@@ -20,6 +20,8 @@
 
 </div>
 
-
+<div class="w-4/5 m-auto">
+    @comments(['model' => $post])
+</div>
 
 @endsection
