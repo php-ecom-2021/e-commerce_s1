@@ -34,6 +34,9 @@
                         @endif
                     @else
                         <span>{{ Auth::user()->name }}</span>
+                        <a class="no-underline hover:underline" href="/shop">Shop</a>
+                        <a class="no-underline hover:underline" href="/cart">Cart</a>
+
 
                         <a href="{{ route('logout') }}"
                            class="no-underline hover:underline"
