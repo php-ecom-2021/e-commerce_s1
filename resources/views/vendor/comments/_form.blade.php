@@ -1,4 +1,4 @@
-<div class=" border border-gray-800 rounded-md mt-20 p-4">
+<div class=" border border-gray-800 rounded-md mt-8 p-4">
     <div class=" ">
         @if($errors->has('commentable_type'))
             <div class="alert alert-danger" role="alert">
@@ -42,7 +42,7 @@
                 <label for="message">@lang('comments::comments.enter_your_message_here')</label>
                 <textarea class="bg-transparent block border-b-2 w-full h-20 mt-2 text-m outline-none  @if($errors->has('message')) is-invalid @endif" name="message" rows="3"></textarea>
             </div>
-            <button type="submit" class="my-4">@lang('comments::comments.submit')</button>
+            <button type="submit" class="my-4 text-red-900 underline">@lang('comments::comments.submit')</button>
         </form>
     </div>
 </div>

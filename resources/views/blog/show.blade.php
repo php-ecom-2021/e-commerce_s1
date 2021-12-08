@@ -7,11 +7,11 @@
     </div>
 </div>
 
-<div class="w-4/5 m-auto pt-20">
-    <span class="text-gray-500">
+<div class="w-4/5 m-auto pt-8">
+    <div class="text-gray-500 mb-3">
         By <span class="font-bold italic text-gray-800"> {{ $post->user->name }} </span>, created on {{ date('jS M Y', strtotime($post->updated_at)) }}
-    </span>   
-    <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
+    </div>   
+    <p class="text-xl text-gray-700 pt-3 pb-3 my-4 leading-8 font-light  border border-gray-800 rounded-md">
         {{ $post->description }}
     </p>
     <img
@@ -20,7 +20,8 @@
 
 </div>
 
-<div class="w-4/5 m-auto">
+<div class="w-4/5 m-auto my-8">
+    <h2 class="text-2xl">Comments</h2>
     @comments(['model' => $post])
 </div>
 
