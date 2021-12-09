@@ -10,6 +10,9 @@
     <hr class="border-1 border-gray-300">
 </div>
 
+
+
+
 <div class="grid sm:grid-cols-4 gap-8 pt-20 mx-auto w-4/5">
    @foreach ($products as $product)
    <div class="mx-auto">

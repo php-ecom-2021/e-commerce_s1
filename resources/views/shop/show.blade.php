@@ -2,6 +2,13 @@
 
 @section('content')
 
+@if (session()->has('success'))
+    <div class="w-4/5 m-auto mt-10 pl-2">
+        <p class="w-2/6 mb-4 text-gray-50 bg-green-500 rounded-2xl py-8">
+            {{ session()->get('success') }}
+        </p>
+    </div>
+@endif
 
     <div class="grid sm:grid-cols-2 gap-2 pt-12 sm:pt-20 mx-auto w-4/5">
         <div class="mx-auto">
